@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpaceEngineersPrograms", "SpaceEngineersPrograms\SpaceEngineersPrograms.csproj", "{68FB22A1-951F-47A9-B76E-85E11E0A18D3}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "JSONParser", "JSONParser\JSONParser.shproj", "{60B41D4B-F453-4FBC-8132-418E4C92FBF2}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		JSONParser\JSONParser.projitems*{60b41d4b-f453-4fbc-8132-418e4c92fbf2}*SharedItemsImports = 13
+		JSONParser\JSONParser.projitems*{68fb22a1-951f-47a9-b76e-85e11e0a18d3}*SharedItemsImports = 5
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68FB22A1-951F-47A9-B76E-85E11E0A18D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68FB22A1-951F-47A9-B76E-85E11E0A18D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68FB22A1-951F-47A9-B76E-85E11E0A18D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68FB22A1-951F-47A9-B76E-85E11E0A18D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7EEC9E22-B37D-439F-A73E-2F02EAC6E453}
+	EndGlobalSection
+EndGlobal

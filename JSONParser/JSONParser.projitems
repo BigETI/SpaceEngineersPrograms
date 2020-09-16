@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>60b41d4b-f453-4fbc-8132-418e4c92fbf2</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" />
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)IJsonNonPrimitive.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JSON.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JsonList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JsonObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JsonElement.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JsonPrimitive.cs" />
+  </ItemGroup>
+</Project>

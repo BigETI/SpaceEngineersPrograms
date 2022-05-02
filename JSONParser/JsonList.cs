@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Text;
 
 namespace IngameScript
 {
@@ -59,7 +57,7 @@ namespace IngameScript
             if (Key != "")
                 result = Key + (pretty ? ": " : ":");
             result += "[";
-            foreach(var jsonObj in Values)
+            foreach (var jsonObj in Values)
             {
                 var childResult = jsonObj.ToString(pretty);
                 if (pretty)
@@ -94,7 +92,7 @@ namespace IngameScript
 
         private IEnumerable<JsonElement> Elements()
         {
-            foreach(var value in Values)
+            foreach (var value in Values)
             {
                 yield return value;
             }

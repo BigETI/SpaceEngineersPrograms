@@ -290,7 +290,7 @@ namespace SpaceEngineersPrograms
 
         private class AppFileSystemObject : AFileSystemObject
         {
-            private Dictionary<string, IFileSystemObject> children = new Dictionary<string, IFileSystemObject>(); 
+            private Dictionary<string, IFileSystemObject> children = new Dictionary<string, IFileSystemObject>();
 
             public override bool IsFile => false;
 

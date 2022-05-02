@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using VRage.Game.GUI.TextPanel;
+﻿using VRage.Game.GUI.TextPanel;
 using VRageMath;
 
 namespace SpaceEngineersPrograms

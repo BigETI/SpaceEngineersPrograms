@@ -722,7 +722,7 @@ namespace SpaceEngineersPrograms
                                         Session session = (sessions.ContainsKey(message.Source) ? sessions[message.Source] : new Session(message.Source, string.Empty));
                                         Commands[command](arguments.ToArray(), (raw_command.Length > command.Length) ? raw_command.Substring(command.Length).TrimStart() : string.Empty, session, users.ContainsKey(session.UserName) ? users[session.UserName] : null);
                                     }
-                                    
+
                                 }
 
                             }

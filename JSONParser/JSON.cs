@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace IngameScript
 {
@@ -121,12 +118,12 @@ namespace IngameScript
                         expectedDelims = keyDelims;
                     }
                 }
-                else if ( Expected == JSONPart.KEY )
+                else if (Expected == JSONPart.KEY)
                 {
                     //Console.WriteLine("Expecting Key...");
                     //Console.WriteLine("Found " + Serialized[charIndex] + " (" + charIndex + ")");
 
-                    switch ( Serialized[charIndex] )
+                    switch (Serialized[charIndex])
                     {
                         case ':':
                             Key = Serialized.Substring(LastCharIndex + 1, charIndex - LastCharIndex - 1).Trim(trimChars);
@@ -149,7 +146,7 @@ namespace IngameScript
 
                 LastCharIndex = charIndex;
                 //Console.WriteLine("Iteration done, CurrentJsonObject is: '" + CurrentNestedJsonObject.Key + "'");
-                if ( ShouldPause() )
+                if (ShouldPause())
                 {
                     yield return false;
                 }

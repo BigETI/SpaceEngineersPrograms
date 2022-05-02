@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace IngameScript
 {
@@ -24,7 +22,7 @@ namespace IngameScript
             }
         }
 
-        public Dictionary<string,JsonElement>.KeyCollection Keys
+        public Dictionary<string, JsonElement>.KeyCollection Keys
         {
             get
             {
@@ -58,18 +56,18 @@ namespace IngameScript
         public override string ToString(bool pretty = true)
         {
             var result = "";
-            if(Key != "" && Key != null)
-                result = Key + (pretty? ": " : ":");
+            if (Key != "" && Key != null)
+                result = Key + (pretty ? ": " : ":");
             result += "{";
-            foreach(var kvp in Value)
+            foreach (var kvp in Value)
             {
                 var childResult = kvp.Value.ToString(pretty);
                 if (pretty)
                     childResult = childResult.Replace("\n", "\n  ");
-                result += (pretty? "\n  " : "") + childResult + ",";
+                result += (pretty ? "\n  " : "") + childResult + ",";
             }
             result = result.Substring(0, result.Length - 1);
-            result += (pretty? "\n}" : "}");
+            result += (pretty ? "\n}" : "}");
 
             return result;
         }

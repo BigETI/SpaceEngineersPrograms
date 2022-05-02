@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace IngameScript
 {
@@ -123,8 +121,8 @@ namespace IngameScript
             if (Value == null)
                 return "";
             var result = "";
-            if(Key != "" && Key != null)
-                result = Key + (pretty? ": " : ":");
+            if (Key != "" && Key != null)
+                result = Key + (pretty ? ": " : ":");
             result += Value;
 
             return result;
